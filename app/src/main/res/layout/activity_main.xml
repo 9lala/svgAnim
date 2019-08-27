@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/img_xjbdraw"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/animvectordrawable" />
+
+            <RelativeLayout
+                android:id="@+id/rl_bili"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_xjbdraw"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/main_iv_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/v_heard" />
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="37dp"
+                        android:background="@drawable/dot" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/dot" />
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/dot" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_loding"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/rl_bili"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/progress_medium_material" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
