@@ -90,7 +90,6 @@ public class BinaryTree {
     //层序遍历
     public void LevelOrder(BinaryTreeNode root) {
         BinaryTreeNode temp;
-
         Queue<BinaryTreeNode> q = new LinkedList<BinaryTreeNode>();
         if (root == null)
             return;
